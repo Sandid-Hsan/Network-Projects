@@ -8,45 +8,49 @@ with the respective IP@ 192.168.1.0/24 155.165.1.0/24 with 3 routers in the midd
 ## PCs configuration: 
 We start by giving each PC its corresponding IP@ , subnet mask and default gateway
 
-1. For PC0:
-set IP@ to 192.168.1.10
-set subnet mask to 255.255.255.0
-set default gateway to 192.168.1.1
-2. For PC1:
-set IP@ to 155.165.1.10
-set subnet mask to 255.255.255.0
-set default gateway to 155.165.1.1
+1. For PC0:  
+set IP@ to 192.168.1.10  
+set subnet mask to 255.255.255.0  
+set default gateway to 192.168.1.1  
+
+2. For PC1:  
+set IP@ to 155.165.1.10  
+set subnet mask to 255.255.255.0  
+set default gateway to 155.165.1.1  
 
 ## Routers configuration: 
 
 #### Router0: 
 Giving the right ip@ for each serial connection
 
-1. Serial2/0:
-set IP@ to 10.0.0.2
-set subnet mask to 255.0.0.0
-2. Serial3/0:
-set IP@ to 20.0.0.1
-set subnet mask to 255.0.0.0
+1. Serial2/0:  
+set IP@ to 10.0.0.2  
+set subnet mask to 255.0.0.0  
+
+2. Serial3/0:  
+set IP@ to 20.0.0.1  
+set subnet mask to 255.0.0.0  
 
 #### Router1: 
-Giving the right ip@ for each serial connection
+Giving the right ip@ for each serial connection  
 
-1. Serial2/0:
-set IP@ to 10.0.0.1
-set subnet mask to 255.0.0.0
-2. Serial3/0:
-set IP@ to 30.0.0.1
-set subnet mask to 255.0.0.0
+1. Serial2/0:  
+set IP@ to 10.0.0.1    
+set subnet mask to 255.0.0.0  
+
+2. Serial3/0:  
+set IP@ to 30.0.0.1  
+set subnet mask to 255.0.0.0  
 #### Router2: 
 Giving the right ip@ for each serial connection
 
-1. Serial2/0:
-set IP@ to 20.0.02
-set subnet mask to 255.0.0.0
-2. Serial3/0:
-set IP@ to 30.0.0.2
-set subnet mask to 255.0.0.0
+1. Serial2/0:  
+set IP@ to 20.0.02  
+set subnet mask to 255.0.0.0  
+
+2. Serial3/0:  
+set IP@ to 30.0.0.2  
+set subnet mask to 255.0.0.0  
 
 ## Implementing OSPF protocol: 
 
