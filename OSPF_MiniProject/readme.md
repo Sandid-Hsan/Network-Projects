@@ -50,32 +50,33 @@ set subnet mask to 255.0.0.0
 
 ## Implementing OSPF protocol: 
 
-1. Router 0:
-Router>en
-Router#conf t
-Router(config)#router ospf 1
-Router(config-router)#network 192.168.1.0 0.0.0.255 area 0
-Router(config-router)#network 10.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 20.0.0.0 0.255.255.255 area 0
-Router(config-router)#exit
+1. Router 0:  
+Router>en  
+Router#conf t  
+Router(config)#router ospf 1  
+Router(config-router)#network 192.168.1.0 0.0.0.255 area 0  
+Router(config-router)#network 10.0.0.0 0.255.255.255 area 0  
+Router(config-router)#network 20.0.0.0 0.255.255.255 area 0   
+Router(config-router)#exit  
 
 1. Router 1:
-Router>en
-Router#conf t
-Router(config)#router ospf 1
-Router(config-router)#network 10.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 30.0.0.0 0.255.255.255 area 0
-Router(config-router)#exit
-1. Router 2:
-Router>en
-Router#conf t
-Router(config)#router ospf 1
-Router(config-router)#network 155.165.1.0 0.0.0.255 area 0
-Router(config-router)#network 20.0.0.0 0.255.255.255 area 0
-Router(config-router)#network 30.0.0.0 0.255.255.255 area 0
-Router(config-router)#exit
+Router>en  
+Router#conf t  
+Router(config)#router ospf 1    
+Router(config-router)#network 10.0.0.0 0.255.255.255 area 0  
+Router(config-router)#network 30.0.0.0 0.255.255.255 area 0  
+Router(config-router)#exit  
+
+1. Router 2:  
+Router>en  
+Router#conf t  
+Router(config)#router ospf 1  
+Router(config-router)#network 155.165.1.0 0.0.0.255 area 0  
+Router(config-router)#network 20.0.0.0 0.255.255.255 area 0  
+Router(config-router)#network 30.0.0.0 0.255.255.255 area 0  
+Router(config-router)#exit  
 
 ## Summary:
 
-Now PC0 and PC1 can communicate with the packet going through Router0 then to Router1.
-In the end this is a basic network architecture to get a deeper inspection on how OSPF should work. 
+Now PC0 and PC1 can communicate with the packet going through Router0 then to Router1.  
+In the end this is a basic network architecture to get a deeper inspection on how OSPF should work.   
